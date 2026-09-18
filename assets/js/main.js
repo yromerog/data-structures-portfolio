@@ -77,3 +77,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var heading = document.querySelector(".hero h1");
+  if (!heading) return;
+
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) return;
+
+  var text = heading.textContent;
+  var chars = text.split("");
+  var perLetterDelay = 35;
+
+  heading.setAttribute("aria-label", text);
+  heading.innerHTML = "";
+
+  chars.forEach(function (char, i) {
+    var span = document.createElement("span");
+    span.className = "letter";
+    span.style.animationDelay = i * perLetterDelay + "ms";
+    span.setAttribute("aria-hidden", "true");
+    span.textContent = char === " " ? " " : char;
+    heading.appendChild(span);
+  });
+
+  var tagline = document.querySelector(".hero .tagline");
+  if (tagline) {
+    var totalDelay = chars.length * perLetterDelay + 500;
+    tagline.classList.add("tagline-intro");
+    setTimeout(function () {
+      tagline.classList.add("is-in");
+    }, totalDelay);
+  }
+});
