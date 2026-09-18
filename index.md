@@ -1,12 +1,23 @@
-Yovany Romero-Gomez
-Data Science Student  
-UNC Charlotte
-About Me
-I am a a student at UNC - Charlotte pursuing a Data Science degree. My short term goal is to enroll into the Data Science and Business Analytics Masters and to pursue a career in financial analytics. 
-Welcome to my Data Science Studio portfolio.
+---
+layout: default
+title: Home
+---
 
- - Connect with me on [LinkedIn](https://www.linkedin.com/in/yovanyromero/) [Resume](resume.pdf)
+# Yovany Romero-Gomez
+<p class="tagline">Data Science Student · UNC Charlotte</p>
+
+## About Me
+
+I am a student at UNC Charlotte pursuing a Data Science degree. My short term goal is to enroll in the Data Science and Business Analytics Master's program and pursue a career in financial analytics.
+
+Welcome to my Data Science Studio portfolio — this site documents my learning and projects throughout the semester.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/yovanyromero/)
+- [Resume](resume.pdf)
+
 ## Portfolio
- - [Blog](blog.md)
- - [Projects](projects.md)
-This website will document my learning and projects throughout the semester.
+
+- [Blog](blog.html)
+- [Projects](projects.html)
