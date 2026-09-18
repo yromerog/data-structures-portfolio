@@ -300,7 +300,7 @@ body {
   }
 }
 
-/* LinkedIn hover-preview card */
+/* Hover-preview cards (LinkedIn, Resume, Projects) */
 
 .link-preview {
   position: relative;
@@ -366,7 +366,8 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  letter-spacing: -0.02em;
 }
 
 .link-preview-heading {
