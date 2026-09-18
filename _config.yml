@@ -1,4 +1,8 @@
 title: Data Science Portfolio
 description: Documenting my learning in Data Structures
-theme: jekyll-theme-minimal
-show_downloads: false
+author: Yovany Romero-Gomez
+
+# Custom layouts/assets in this repo (see _layouts/, assets/) fully replace
+# the old jekyll-theme-minimal theme, so no `theme:` is set here.
+
+markdown: kramdown
