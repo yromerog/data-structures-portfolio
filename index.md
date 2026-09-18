@@ -25,7 +25,7 @@ Welcome to my Data Science Studio portfolio — this site documents my learning 
 
 ## Contact
 
-- [LinkedIn](https://www.linkedin.com/in/yovanyromero/)
+- <span class="link-preview"><a href="https://www.linkedin.com/in/yovanyromero/">LinkedIn</a><span class="link-preview-card"><strong>Yovany Romero-Gomez</strong><span class="link-preview-role">Data Science Student · UNC Charlotte</span><span class="link-preview-desc">Connect with me on LinkedIn to follow my data science journey.</span></span></span>
 - [Resume](resume.pdf)
 
 </div>

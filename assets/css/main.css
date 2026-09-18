@@ -61,6 +61,47 @@ body {
   margin: 0 auto;
 }
 
+.hero h1 .letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letter-in 0.7s ease forwards;
+}
+
+@keyframes letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.85);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.tagline-intro {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.tagline-intro.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 .letter {
+    animation: none;
+    opacity: 1;
+  }
+
+  .tagline-intro {
+    transition: none;
+  }
+}
+
 /* Header / Nav */
 
 .site-header {
@@ -255,6 +296,64 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .card-inner {
+    transition: none;
+  }
+}
+
+/* LinkedIn hover-preview card */
+
+.link-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.link-preview-card {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  z-index: 10;
+  width: 240px;
+  max-width: calc(100vw - 48px);
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  text-align: left;
+}
+
+.link-preview:hover .link-preview-card,
+.link-preview:focus-within .link-preview-card {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.link-preview-card strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.link-preview-role {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.link-preview-desc {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-preview-card {
     transition: none;
   }
 }
