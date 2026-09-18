@@ -310,46 +310,94 @@ body {
 .link-preview-card {
   position: absolute;
   left: 0;
-  top: calc(100% + 10px);
+  top: calc(100% + 16px);
   z-index: 10;
-  width: 240px;
-  max-width: calc(100vw - 48px);
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: min(380px, 85vw);
+  padding: 1.5rem;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
   opacity: 0;
-  transform: translateY(-6px) scale(0.98);
+  transform: scale(0.92) translateY(-10px);
+  transform-origin: top left;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: left;
+}
+
+.link-preview-card::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 24px;
+  width: 14px;
+  height: 14px;
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  transform: rotate(45deg);
 }
 
 .link-preview:hover .link-preview-card,
 .link-preview:focus-within .link-preview-card {
   opacity: 1;
-  transform: none;
+  transform: scale(1) translateY(0);
   pointer-events: auto;
+}
+
+.link-preview-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.link-preview-avatar {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.link-preview-heading {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .link-preview-card strong {
   display: block;
-  font-size: 0.95rem;
-  margin-bottom: 0.15rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
 }
 
 .link-preview-role {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  margin-bottom: 0.5rem;
+  margin-top: 0.15rem;
 }
 
 .link-preview-desc {
   display: block;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.link-preview-cta {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 @media (prefers-reduced-motion: reduce) {
