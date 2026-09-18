@@ -3,11 +3,15 @@ layout: default
 title: Blog
 ---
 
+<div class="reveal" markdown="1">
+
 # Blog
 
 Throughout this course, I will write posts about data science topics I am interested in.
 
-<div class="post-preview" markdown="1">
+</div>
+
+<div class="post-preview reveal" markdown="1">
 
 ## [Blog 1: What is Data Science to Me?](blog/blog1.html)
 

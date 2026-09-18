@@ -3,11 +3,15 @@ layout: default
 title: Projects
 ---
 
+<div class="reveal" markdown="1">
+
 # Projects
 
 This section documents my data science projects, research questions, and data stories I create throughout the semesters.
 
-<div class="post-preview" markdown="1">
+</div>
+
+<div class="post-preview reveal" markdown="1">
 
 ## [Project 1: Sector ETF Performance](https://github.com/yromerog/data-structures-portfolio/blob/main/1st_project.ipynb)
 
