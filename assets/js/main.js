@@ -65,3 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var hasHover = window.matchMedia("(hover: hover)").matches;
+  if (hasHover) return;
+
+  document.querySelectorAll(".project-card").forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      if (e.target.closest("a")) return;
+      card.classList.toggle("is-flipped");
+    });
+  });
+});
