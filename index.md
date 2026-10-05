@@ -35,6 +35,6 @@ Welcome to my Data Science Studio portfolio — this site documents my learning 
 ## Portfolio
 
 - [Blog](blog.html)
-- <span class="link-preview"><a href="projects.html">Projects</a><span class="link-preview-card"><span class="link-preview-header"><span class="link-preview-avatar">01</span><span class="link-preview-heading"><strong>Projects</strong><span class="link-preview-role">1 featured project</span></span></span><span class="link-preview-desc">Sector ETF Performance — how the 11 sector ETFs performed against the benchmark in the first 8 months of 2026.</span><a class="link-preview-cta" href="projects.html">View all projects →</a></span></span>
+- <span class="link-preview"><a href="projects.html">Projects</a><span class="link-preview-card"><span class="link-preview-header"><span class="link-preview-avatar">02</span><span class="link-preview-heading"><strong>Projects</strong><span class="link-preview-role">2 featured projects</span></span></span><span class="link-preview-desc">Sector ETF Performance, and a regression model on retail profitability and discount pricing.</span><a class="link-preview-cta" href="projects.html">View all projects →</a></span></span>
 
 </div>
