@@ -194,6 +194,32 @@ body {
   text-decoration-color: currentColor;
 }
 
+.site-content img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+  margin: 1.25em 0;
+}
+
+.site-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25em 0;
+  font-size: 0.92rem;
+}
+
+.site-content th,
+.site-content td {
+  border: 1px solid var(--border);
+  padding: 0.5em 0.75em;
+  text-align: left;
+}
+
+.site-content th {
+  font-weight: 600;
+}
+
 .tagline {
   color: var(--muted);
   margin-top: 0;

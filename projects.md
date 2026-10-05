@@ -23,4 +23,15 @@ This section documents my data science projects, research questions, and data st
       </div>
     </div>
   </div>
+  <div class="project-card">
+    <div class="card-inner">
+      <div class="card-front">
+        <h3>Retail Profitability & Pricing</h3>
+      </div>
+      <div class="card-back">
+        <p>A regression model predicting order profit, and where discounting starts eating into margin.</p>
+        <a href="projects/retail-profitability.html">View Project →</a>
+      </div>
+    </div>
+  </div>
 </div>
